@@ -1,0 +1,1 @@
+-- CREATE TABLE statements for Sales and Product data marts

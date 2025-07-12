@@ -1,0 +1,6 @@
+Total Sales = SUM(Sales[Amount])
+YTD Sales = TOTALYTD([Total Sales], 'Date'[Date])
+MoM Growth % = 
+VAR Current = [Total Sales]
+VAR Previous = CALCULATE([Total Sales], DATEADD('Date'[Date], -1, MONTH))
+RETURN DIVIDE(Current - Previous, Previous, 0)
